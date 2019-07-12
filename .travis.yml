@@ -10,10 +10,10 @@ install:
   - pip install tox-travis pip -U --no-cache-dir
 script:
   - tox
-after_success:
   - tox -e pep8
-  - tox -e codecov
   - tox -e docs
+after_success:
+  - tox -e codecov
 deploy:
   provider: pypi
   on:
