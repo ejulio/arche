@@ -4,6 +4,10 @@ git:
   depth: false
   quiet: true
 dist: xenial
+addons:
+  apt:
+    packages:
+    - pandoc
 python:
   - "3.7"
 install:
